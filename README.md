@@ -416,7 +416,7 @@ git cherry-pick --no-commit abc1234
 
 **Kapan pakai cherry-pick?**
 - Bug fix di branch lain perlu diapply ke branch ini
--ambil 1 commit spesifik tanpa merge seluruh branch
+- Ambil 1 commit spesifik tanpa merge seluruh branch
 
 #### Rebase
 
