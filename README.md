@@ -22,10 +22,10 @@ Repository praktikum Rekayasa Sistem Informasi 2026.
 
 ```bash
 # Clone repo (default branch: main)
-git clone https://github.com/<username>/prak-rsi-2026.git
+git clone https://github.com/trishagarniss/prak-rsi-2026.git
 
 # Clone dan langsung checkout ke branch tertentu
-git clone -b p1 https://github.com/<username>/prak-rsi-2026.git
+git clone -b p1 https://github.com/trishagarniss/prak-rsi-2026.git
 ```
 
 ## Setup
