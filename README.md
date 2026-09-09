@@ -130,7 +130,7 @@ git init
 # └── refs/         ← pointer ke commit (branches, tags)
 ```
 
-###Lifecycle File di Git
+### Lifecycle File di Git
 
 ```
                     git add
