@@ -6,9 +6,11 @@ import { User } from "../types";
 
 // Array of User sebagai "database" sementara
 const users: User[] = [
-  { id: 1, name: "Budi Santoso", email: "budi@mail.com" },
-  { id: 2, name: "Sari Dewi", email: "sari@mail.com" },
-  { id: 3, name: "Andi Pratama", email: "andi@mail.com" },
+  { id: 1, name: "Muhammad Lintang", email: "lintang@mail.com" },
+  { id: 2, name: "Raihan Banu", email: "raihan@mail.com" },
+  { id: 3, name: "Kunto Rossindu", email: "kunto@mail.com" },
+  { id: 4, name: "Dapina Karamoy", email: "dapina@mail.com" },
+  { id: 5, name: "Ayunina Kanina", email: "ayunina@mail.com" },
 ];
 
 export default users;

@@ -43,6 +43,6 @@ app.get("/", (req, res) => {
 
 // ─── Start Server ─────────────────────────────────────────
 app.listen(PORT, () => {
-  console.log(`🚀 Server berjalan di http://localhost:${PORT}`);
-  console.log(`📋 Users API: http://localhost:${PORT}/api/users`);
+  console.log(`Server berjalan di http://localhost:${PORT}`);
+  console.log(`Users API: http://localhost:${PORT}/api/users`);
 });
