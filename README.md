@@ -28,7 +28,7 @@
 ### Client-Server Architecture
 
 ```
-┌──────────┐       HTTP Request       ┌──────────┐       Query        ┌──────────┐
+┌──────────┐       HTTP Request       ┌──────────┐       Query       ┌──────────┐
 │  Client  │ ───────────────────────► │ Backend  │ ────────────────► │ Database │
 │ (Browser)│ ◄─────────────────────── │  (API)   │ ◄──────────────── │  (SQL)   │
 └──────────┘       HTTP Response      └──────────┘      Result       └──────────┘
@@ -53,7 +53,7 @@ Client                          Server
   │                               │     - Query database
   │                               │     - Format response
   │                               │
-  │◄──── 200 OK + JSON data ─────│  (3) Response
+  │◄──── 200 OK + JSON data ──────│  (3) Response
   │                               │     - Status: 200
   │                               │     - Body: [{id: 1, name: "Budi"}, ...]
 ```
@@ -652,7 +652,7 @@ Alur kerja Pull Request:
 │                                                                 │
 │  5. Review & diskusi                                            │
 │     - Reviewer beri komentar                                    │
-│     - Developer perbaiki jika ada request                        │
+│     - Developer perbaiki jika ada request                       │
 │                                                                 │
 │  6. Approve & Merge                                             │
 │     - Setelah approve, klik "Merge pull request"                │
@@ -666,20 +666,20 @@ Alur kerja Pull Request:
 ```
 Developer                          Reviewer
     │                                │
-    │─── buat PR ──────────────────►│
+    │─── buat PR ───────────────────►│
     │                                │
     │                                │── review kode
     │                                │── beri komentar
-    │◄── request changes ───────────│
+    │◄─── request changes ───────────│
     │                                │
     │── perbaiki kode ──────────────►│
-    │── push ke branch PR ─────────►│
+    │── push ke branch PR ──────────►│
     │                                │
     │                                │── re-review
-    │◄── approve ───────────────────│
+    │◄── approve ────────────────────│
     │                                │
     │── merge PR ───────────────────►│
-    │── hapus branch ──────────────►│
+    │── hapus branch ───────────────►│
 ```
 
 **Tips Code Review:**
@@ -769,16 +769,16 @@ git push origin main
 
 ```
 main (production) ──────────────────────────────────────────────────
- │                                                                    │
+ │                                                                   │
  ├── develop (development) ────────────────────────────────────────  │
- │    │                                                               │
+ │    │                                                              │
  │    ├── feature/login ──► PR ──► develop                           │
  │    ├── feature/register ──► PR ──► develop                        │
  │    └── feature/dashboard ──► PR ──► develop                       │
- │                                                                    │
- ├── release/v1.0 ──► PR ──► main + develop                         │
- │                                                                    │
- └── hotfix/fix-bug ──► PR ──► main + develop                       │
+ │                                                                   │
+ ├── release/v1.0 ──► PR ──► main + develop                          │
+ │                                                                   │
+ └── hotfix/fix-bug ──► PR ──► main + develop                        │
 ```
 
 | Branch | Fungsi | Siapa yang push |
@@ -793,7 +793,7 @@ main (production) ────────────────────�
 
 ```
 main ─────────────────────────────────────────────────►
- │                                                      │
+ │                                                     │
  ├── feature/short-lived ──► PR ──► main (cepat)       │
  ├── bugfix/quick-fix ──► PR ──► main                  │
  └── ...
@@ -862,19 +862,19 @@ git push origin --delete v1.0.0
 
 ```
 ┌────────────────────────────────────────────────────────────────────────┐
-│                     LENGKAP COLLABORATION WORKFLOW                      │
+│                     LENGKAP COLLABORATION WORKFLOW                     │
 ├────────────────────────────────────────────────────────────────────────┤
 │                                                                        │
-│  ┌─────────┐    ┌──────────┐    ┌──────────┐    ┌──────────────┐     │
-│  │  Clone  │───►│  Create  │───►│   Work   │───►│    Stage     │     │
-│  │  repo   │    │  branch  │    │   code   │    │   changes    │     │
-│  └─────────┘    └──────────┘    └──────────┘    └──────┬───────┘     │
-│                                                         │              │
-│                                                         ▼              │
-│  ┌─────────────────┐    ┌──────────┐    ┌───────────────────────┐    │
-│  │  Delete branch  │◄───│  Merge   │◄───│      Create PR        │    │
-│  │  (cleanup)      │    │   PR     │    │  (Push + Open PR)     │    │
-│  └─────────────────┘    └──────────┘    └───────────────────────┘    │
+│  ┌─────────┐    ┌──────────┐    ┌──────────┐    ┌──────────────┐       │
+│  │  Clone  │───►│  Create  │───►│   Work   │───►│    Stage     │       │
+│  │  repo   │    │  branch  │    │   code   │    │   changes    │       │
+│  └─────────┘    └──────────┘    └──────────┘    └──────┬───────┘       │
+│                                                        │               │
+│                                                        ▼               │
+│  ┌─────────────────┐    ┌──────────┐    ┌───────────────────────┐      │
+│  │  Delete branch  │◄───│  Merge   │◄───│      Create PR        │      │
+│  │  (cleanup)      │    │   PR     │    │  (Push + Open PR)     │      │
+│  └─────────────────┘    └──────────┘    └───────────────────────┘      │
 │                                                                        │
 └────────────────────────────────────────────────────────────────────────┘
 
