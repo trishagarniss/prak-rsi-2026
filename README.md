@@ -1032,37 +1032,6 @@ git reset --hard HEAD~1
 
 ---
 
-## 10. Tugas
-
-> Kerjakan tugas praktikum untuk pertemuan ini di branch `p1`.
-
-### Tugas: Git & GitHub
-
-1. **Setup**
-   - Install Git di komputer
-   - Konfigurasi `user.name` dan `user.email`
-   - Setup SSH key di GitHub
-
-2. **Latihan Dasar**
-   - Buat repository lokal dengan `git init`
-   - Buat file baru, lalu lakukan `add` → `commit`
-   - Buat branch baru, ubah isi file di branch tersebut
-   - Merge branch ke `main`
-   - Coba `git stash`, lalu `git stash pop`
-
-3. **GitHub**
-   - Buat repository baru di GitHub
-   - Push repository lokal ke GitHub
-   - Buat Pull Request dari branch feature ke `main`
-   - Simulasi resolve conflict
-
-4. **Submission**
-   - Screenshot histori commit (`git log --oneline --all --graph`)
-   - Link repository GitHub
-   - Submit ke LMS
-
----
-
 ## 11. Referensi
 
 | Sumber | Link |
