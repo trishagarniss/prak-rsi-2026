@@ -597,35 +597,6 @@ git stash pop
 
 ---
 
-## Tugas
-
-> Kerjakan tugas praktikum untuk pertemuan ini di branch `p1`.
-
-### Tugas: Git & GitHub
-
-1. **Setup**
-   - Install Git di komputer
-   - Konfigurasi `user.name` dan `user.email`
-
-2. **Latihan Dasar**
-   - Buat repository lokal dengan `git init`
-   - Buat file baru, lalu lakukan `add` → `commit`
-   - Buat branch baru, ubah isi file di branch tersebut
-   - Merge branch ke `main`
-
-3. **GitHub**
-   - Buat repository baru di GitHub
-   - Push repository lokal ke GitHub
-   - Buat Pull Request dari branch feature ke `main`
-   - Simulasi resolve conflict
-
-4. **Submission**
-   - Screenshot histori commit (`git log --oneline --all --graph`)
-   - Link repository GitHub
-   - Submit ke LMS
-
----
-
 ## Referensi
 
 - [Git Documentation](https://git-scm.com/doc)
