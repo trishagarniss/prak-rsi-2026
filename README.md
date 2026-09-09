@@ -28,7 +28,7 @@
 ### Client-Server Architecture
 
 ```
-┌──────────┐       HTTP Request       ┌──────────┐       Query        ┌──────────┐
+┌──────────┐       HTTP Request       ┌──────────┐       Query       ┌──────────┐
 │  Client  │ ───────────────────────► │ Backend  │ ────────────────► │ Database │
 │ (Browser)│ ◄─────────────────────── │  (API)   │ ◄──────────────── │  (SQL)   │
 └──────────┘       HTTP Response      └──────────┘      Result       └──────────┘
@@ -53,7 +53,7 @@ Client                          Server
   │                               │     - Query database
   │                               │     - Format response
   │                               │
-  │◄──── 200 OK + JSON data ─────│  (3) Response
+  │◄──── 200 OK + JSON data ──────│  (3) Response
   │                               │     - Status: 200
   │                               │     - Body: [{id: 1, name: "Budi"}, ...]
 ```
