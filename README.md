@@ -1,55 +1,20 @@
-# Praktikum RSI 2026
+# Pertemuan 3: Recall Desain Database, ORM, dan Integrasi dengan Backend
 
-Repository praktikum Rekayasa Sistem Informasi 2026.
+## Pertanyaan Arsitektural
 
-## Daftar Branch
+- Bagaimana backend menyimpan dan mengambil data secara persisten dari database untuk memenuhi request pengguna?
 
-| Branch  | Nama         | Keterangan          |
-| ------- | ------------ | ------------------- |
-| `main`  | main         | Branch utama        |
-| `p1`    | Pertemuan 1  | Materi pertemuan 1  |
-| `p2`    | Pertemuan 2  | Materi pertemuan 2  |
-| `p3`    | Pertemuan 3  | Materi pertemuan 3  |
-| `p4`    | Pertemuan 4  | Materi pertemuan 4  |
-| `p5`    | Pertemuan 5  | Materi pertemuan 5  |
-| `p6`    | Pertemuan 6  | Materi pertemuan 6  |
-| `p7`    | Pertemuan 7  | Materi pertemuan 7  |
-| `p8`    | Pertemuan 8  | Materi pertemuan 8  |
-| `p9`    | Pertemuan 9  | Materi pertemuan 9  |
-| `p10`   | Pertemuan 10 | Materi pertemuan 10 |
+## Cakupan Materi
 
-## Cara Clone
+- Recall desain database (ERD) di SQL Server
+- Koneksi backend ke SQL Server (connection string, driver)
+- Parameterized query
+- CRUD lanjutan: filtering, pagination, join antar tabel
 
-```bash
-# Clone repo (default branch: main)
-git clone https://github.com/<username>/prak-rsi-2026.git
+## Tugas: Individu
 
-# Clone dan langsung checkout ke branch tertentu
-git clone -b p1 https://github.com/<username>/prak-rsi-2026.git
-```
+---
 
-## Setup
-
-```bash
-# Install semua dependencies (frontend + backend)
-npm run install:all
-
-# Jalankan backend & frontend sekaligus
-npm run dev
-
-# Atau jalankan terpisah
-npm run dev:backend
-npm run dev:frontend
-```
-
-## Struktur Repository
-
-```
-prak-rsi-2026/
-├── README.md
-├── package.json
-├── .gitignore
-├── LICENSE
-├── backend/
-└── frontend/
-```
+> **Status: Coming Soon**
+>
+> Materi dan code example untuk pertemuan ini akan ditambahkan menjelang praktikum berlangsung.
