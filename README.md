@@ -29,19 +29,19 @@
 
 ```
 backend/
+├── nodemon.json             # Konfigurasi nodemon (auto-restart)
 ├── package.json             # Dependencies & scripts
 ├── tsconfig.json            # Konfigurasi TypeScript
-├── nodemon.json             # Konfigurasi nodemon (auto-restart)
 └── src/
-    ├── server.ts            # Entry point - menjalankan server
-    ├── routes/
-    │   └── user.routes.ts   # Definisi endpoints (URL + method)
     ├── controllers/
     │   └── user.controller.ts # Logika bisnis tiap endpoint
     ├── data/
     │   └── users.ts         # Data in-memory (array, bukan database)
-    └── types/
-        └── index.ts         # Interface/type definitions
+    ├── routes/
+    │   └── user.routes.ts   # Definisi endpoints (URL + method)
+    ├── types/
+    │   └── index.ts         # Interface/type definitions
+    └── server.ts            # Entry point - menjalankan server
 ```
 
 ### Flow Request
@@ -105,7 +105,7 @@ npm run dev
 ```json
 {
   "success": true,
-  "data": { "id": 1, "name": "Budi", "email": "budi@mail.com" }
+  "data": { "id": 1, "name": "Muhammad Lintang", "email": "lintang@mail.com" }
 }
 ```
 
@@ -131,12 +131,12 @@ curl http://localhost:3000/api/users/1
 # POST user baru
 curl -X POST http://localhost:3000/api/users \
   -H "Content-Type: application/json" \
-  -d '{"name": "Rina", "email": "rina@mail.com"}'
+  -d '{"name": "Dapina Karamoy", "email": "dapina@mail.com"}'
 
 # PUT update user
 curl -X PUT http://localhost:3000/api/users/1 \
   -H "Content-Type: application/json" \
-  -d '{"name": "Budi Updated", "email": "budi_new@mail.com"}'
+  -d '{"name": "Lintang Updated", "email": "lintang_new@mail.com"}'
 
 # DELETE user
 curl -X DELETE http://localhost:3000/api/users/1
