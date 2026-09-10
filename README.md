@@ -4,9 +4,7 @@
 
 - Bagaimana backend menerima, memproses, dan mengembalikan response terhadap request dari client?
 
-<<<<<<< HEAD
 ## Cakupan Materi
-=======
 | Branch  | Keterangan                          |
 | ------- | ----------------------------------- |
 | `main`  | Branch utama                        |
