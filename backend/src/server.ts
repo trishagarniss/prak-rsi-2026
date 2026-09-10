@@ -11,7 +11,7 @@ const app = express();
 // Port server (bisa diganti lewat environment variable)
 const PORT = process.env.PORT || 3000;
 
-// ─── Middleware ────────────────────────────────────────────
+// Middleware
 // Middleware = fungsi yang dijalankan SEBELUM request sampai ke route
 
 // parse JSON body dari request
@@ -25,7 +25,7 @@ app.use(express.urlencoded({ extended: true }));
 // tanpa ini, browser akan blokir request dari localhost:5173 ke localhost:3000
 app.use(cors());
 
-// ─── Routes ───────────────────────────────────────────────
+// Routes
 // Semplekan route user ke path /api/users
 // Artinya semua request ke /api/users/* akan ditangani oleh userRoutes
 
@@ -41,7 +41,7 @@ app.get("/", (req, res) => {
   });
 });
 
-// ─── Start Server ─────────────────────────────────────────
+// Start Server 
 app.listen(PORT, () => {
   console.log(`Server berjalan di http://localhost:${PORT}`);
   console.log(`Users API: http://localhost:${PORT}/api/users`);
