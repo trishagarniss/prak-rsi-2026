@@ -1,4 +1,4 @@
-﻿# Pertemuan 2: Pengantar Backend & Implementasi REST API dengan CRUD Dasar
+# Pertemuan 2: Pengantar Backend & Implementasi REST API dengan CRUD Dasar
 
 ## Pertanyaan Arsitektural
 
@@ -29,45 +29,45 @@
 
 ```
 backend/
-Ôö£ÔöÇÔöÇ nodemon.json             # Konfigurasi nodemon (auto-restart)
-Ôö£ÔöÇÔöÇ package.json             # Dependencies & scripts
-Ôö£ÔöÇÔöÇ tsconfig.json            # Konfigurasi TypeScript
-ÔööÔöÇÔöÇ src/
-    Ôö£ÔöÇÔöÇ controllers/
-    Ôöé   ÔööÔöÇÔöÇ user.controller.ts # Logika bisnis tiap endpoint
-    Ôö£ÔöÇÔöÇ data/
-    Ôöé   ÔööÔöÇÔöÇ users.ts         # Data in-memory (array, bukan database)
-    Ôö£ÔöÇÔöÇ routes/
-    Ôöé   ÔööÔöÇÔöÇ user.routes.ts   # Definisi endpoints (URL + method)
-    Ôö£ÔöÇÔöÇ types/
-    Ôöé   ÔööÔöÇÔöÇ index.ts         # Interface/type definitions
-    ÔööÔöÇÔöÇ server.ts            # Entry point - menjalankan server
+├── nodemon.json             # Konfigurasi nodemon (auto-restart)
+├── package.json             # Dependencies & scripts
+├── tsconfig.json            # Konfigurasi TypeScript
+└── src/
+    ├── controllers/
+    │   └── user.controller.ts # Logika bisnis tiap endpoint
+    ├── data/
+    │   └── users.ts         # Data in-memory (array, bukan database)
+    ├── routes/
+    │   └── user.routes.ts   # Definisi endpoints (URL + method)
+    ├── types/
+    │   └── index.ts         # Interface/type definitions
+    └── server.ts            # Entry point - menjalankan server
 ```
 
 ### Flow Request
 
 ```
 Client (Browser/Postman)
-  Ôöé
-  Ôöé  HTTP Request (GET /api/users)
-  Ôû╝
-server.ts              ÔåÉ Menerima request, parse body
-  Ôöé
-  Ôöé  Route matching
-  Ôû╝
-user.routes.ts         ÔåÉ Cocokkan method + URL ke handler
-  Ôöé
-  Ôöé  Panggil controller
-  Ôû╝
-user.controller.ts     ÔåÉ Jalankan logika, akses data
-  Ôöé
-  Ôöé  Baca/tulis data
-  Ôû╝
-users.ts               ÔåÉ Data in-memory (array of objects)
-  Ôöé
-  Ôöé  Return response
-  Ôû╝
-Client                 ÔåÉ Terima JSON response
+  │
+  │  HTTP Request (GET /api/users)
+  ▼
+server.ts              ← Menerima request, parse body
+  │
+  │  Route matching
+  ▼
+user.routes.ts         ← Cocokkan method + URL ke handler
+  │
+  │  Panggil controller
+  ▼
+user.controller.ts     ← Jalankan logika, akses data
+  │
+  │  Baca/tulis data
+  ▼
+users.ts               ← Data in-memory (array of objects)
+  │
+  │  Return response
+  ▼
+Client                 ← Terima JSON response
 ```
 
 ---
@@ -155,7 +155,7 @@ curl -X DELETE http://localhost:3000/api/users/1
 ### `routes/user.routes.ts` - Routing
 - Mendefinisikan URL endpoint dan HTTP method
 - Menghubungkan setiap route ke controller yang sesuai
-- Contoh: `router.get("/", getAllUsers)` ÔåÆ GET `/` panggil `getAllUsers`
+- Contoh: `router.get("/", getAllUsers)` → GET `/` panggil `getAllUsers`
 
 ### `controllers/user.controller.ts` - Controller
 - Berisi logika bisnis untuk setiap endpoint
